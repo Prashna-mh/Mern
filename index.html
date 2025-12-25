@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitStudio | Premium Gym</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+
+   
+    <input type="checkbox" id="menu-toggle">
+    <label for="menu-toggle" class="sidebar-overlay"></label>
+
+    
+    <nav class="sidebar">
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:40px;">
+            <h2>Fit Services</h2>
+            <label for="menu-toggle" style="cursor:pointer;"><i class="fas fa-times fa-lg"></i></label>
+        </div>
+        <ul>
+            <li><a href="javascript:void(0)">Weight Training</a></li>
+            <li><a href="javascript:void(0)">Cardio Zones</a></li>
+            <li><a href="javascript:void(0)">Yoga Studio</a></li>
+            <li><a href="javascript:void(0)">Personal Coaching</a></li>
+            <li><a href="javascript:void(0)">Pool & Sauna</a></li>
+        </ul>
+    </nav>
+
+    
+    <header>
+        <div class="nav-left">
+            <label for="menu-toggle" class="menu-icon"><i class="fas fa-bars"></i></label>
+            <a href="#" class="logo">FIT<span>STUDIO</span></a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="profile-icon"><i class="fas fa-user-circle"></i></div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Refine Your Strength</h1>
+            <p>Join FitStudio today and transform your physique with elite training methods and premium facilities.</p>
+            
+            <a href="javascript:void(0)" class="btn-primary">Get Started Today</a>
+        </div>
+    </section>
+
+    
+    <section class="benefits-section">
+        <h2>Member <span>Benefits</span></h2>
+        <div class="benefits-grid">
+            <div class="benefit-box">
+                <h3>Elite Gear</h3>
+                <p>Access the latest hammer strength machines and Olympic-grade free weights.</p>
+            </div>
+            <div class="benefit-box">
+                <h3>24/7 Access</h3>
+                <p>Train on your schedule with round-the-clock secure access to all facilities.</p>
+            </div>
+            <div class="benefit-box">
+                <h3>Expert Trainers</h3>
+                <p>Work with certified professionals to create a custom plan tailored to your goals.</p>
+            </div>
+            <div class="benefit-box">
+                <h3>Luxury Spa</h3>
+                <p>Recover faster with our post-workout steam rooms and hydro-massage beds.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="classes-section">
+        <span class="sub-title">OUR CLASSES</span>
+        <h2>OUR FITNESS CLASSES</h2>
+
+        <div class="filter-container">
+            <button class="filter-btn">All</button>
+            <button class="filter-btn">Signature Class</button>
+            <button class="filter-btn active">Strength and Conditioning</button>
+            <button class="filter-btn">Mind and Body</button>
+            <button class="filter-btn">Cycling</button>
+            <button class="filter-btn">Cardio</button>
+        </div>
+
+        <div class="slider-wrapper">
+            <button class="slider-nav" onclick="moveSlide(-1)"><i class="fas fa-chevron-left"></i></button>
+            
+            <div class="slider-container" id="slider">
+            
+                <div class="slide">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPI0WTB31Pzd_J7fwLp7tXLoInOize-0ueEQ&s" alt="Training">
+                </div>
+            <div class="slide active">
+                    <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Cycling">
+                </div>
+                
+                <div class="slide">
+                    <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Body Building">
+                </div>
+            </div>
+
+            <button class="slider-nav" onclick="moveSlide(1)"><i class="fas fa-chevron-right"></i></button>
+        </div>
+
+        <div class="class-details">
+            <h3 id="class-title">CARDIOBLAST</h3>
+            <p id="class-desc">Whether you're here to build muscle, find balance, or boost your endurance, our state-of-the-art equipment, expert trainers, and motivating atmosphere will help you reach your peak.</p>
+        </div>
+    </section>
+
+   
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-about">
+                <h2>FITSTUDIO</h2>
+                <p>FitStudio is more than just a gym. It's a movement. We provide the tools, the atmosphere, and the expertise to help you reach your peak physical condition.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Classes</a></li>
+                    <li><a href="#">Events</a></li>
+                    
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Support</h3>
+                <ul>
+                    <li><a href="#">Help center</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Use</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Location</h3>
+                <ul style="color: var(--text-muted); font-size: 14px;">
+                    <li><i class="fas fa-map-marker-alt" style="color:var(--primary)"></i> 55 Iron Street, Gym City</li>
+                    <li><i class="fas fa-phone" style="color:var(--primary)"></i> +977 9841568792</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 FitStudio Premium Center. All Rights Reserved.</p>
+        </div>
+    </footer>
+    
+
+</body>
+</html>
